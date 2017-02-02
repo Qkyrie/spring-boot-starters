@@ -1,0 +1,1 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration = eu.deswaef.spring.auth0.autoconfigure.Auth0AutoConfiguration
