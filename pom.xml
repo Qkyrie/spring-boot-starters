@@ -9,6 +9,8 @@
     <name>spring-boot-starters</name>
     <description>3d party spring boot starters.</description>
 
+    <url>https://github.com/Qkyrie/spring-boot-starters</url>
+
     <packaging>pom</packaging>
 
     <properties>
@@ -31,5 +33,27 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <scm>
+        <url>https://github.com/Qkyrie/spring-boot-starters</url>
+        <connection>scm:git:git://github.com/Qkyrie/spring-boot-starters.git</connection>
+        <developerConnection>scm:git:git@github.com:Qkyrie/spring-boot-starters.git</developerConnection>
+    </scm>
+
+    <licenses>
+        <license>
+            <name>Apache License V2</name>
+            <url>https://opensource.org/licenses/Apache-2.0</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>qkyrie</id>
+            <name>Quinten De Swaef</name>
+            <email>quintendeswaef[AT]gmail[DOT]com</email>
+        </developer>
+    </developers>
 
 </project>
