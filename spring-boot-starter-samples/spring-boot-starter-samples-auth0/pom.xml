@@ -1,0 +1,23 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>eu.deswaef.spring</groupId>
+        <artifactId>spring-boot-starter-samples</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>spring-boot-starter-samples-auth0</artifactId>
+
+    <name>spring-boot-starter-samples-auth0</name>
+    <description>Auth0 Samples of the 3d party spring boot starters.</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>eu.deswaef.spring</groupId>
+            <artifactId>spring-boot-starter-auth0</artifactId>
+        </dependency>
+    </dependencies>
+</project>

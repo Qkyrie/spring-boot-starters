@@ -12,9 +12,9 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>spring-boot-starters-auth0</artifactId>
+    <artifactId>spring-boot-starter-auth0</artifactId>
 
-    <name>Auth0 :: Starters :: Spring :: Boot</name>
+    <name>spring-boot-starter-auth0</name>
     <description>3d party spring boot starters.</description>
 
     <dependencies>
@@ -32,7 +32,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
             <optional>true</optional>
-            <scope>provided</scope>
         </dependency>
 
         <!-- auth0 -->

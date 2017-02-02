@@ -8,8 +8,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 
 @Configuration
-@Import(Auth0Config.class)
 @ConditionalOnProperty(name = "auth0.enabled", matchIfMissing = true)
+@Import(Auth0Config.class)
 public class Auth0AutoConfiguration {
 
     @ConditionalOnMissingBean(Auth0.class)

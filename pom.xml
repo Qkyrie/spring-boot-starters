@@ -6,16 +6,18 @@
     <artifactId>spring-boot-starters</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
-    <name>Starters :: Spring :: Boot</name>
+    <name>spring-boot-starters</name>
     <description>3d party spring boot starters.</description>
+
     <packaging>pom</packaging>
 
     <properties>
-        <spring-boot.version>1.5.1.RELEASE</spring-boot.version>
+        <spring-boot.version>1.4.4.RELEASE</spring-boot.version>
     </properties>
 
     <modules>
         <module>spring-boot-starter-auth0</module>
+        <module>spring-boot-starter-samples</module>
     </modules>
 
     <dependencyManagement>

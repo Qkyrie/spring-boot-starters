@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: Auth0 Test Configuration
+
+auth0:
+  domain: "domain"
+  issuer: "issuer"
+  clientId: "clientId"
+  clientSecret: "clientSecret"
+  onLogoutRedirectTo: "/logout"
+  loginRedirectOnSuccess: "/login?success"
+  loginRedirectOnFail: "login?error"
+  loginCallback: "/login?callback"
+  securedRoute: "/secure/"

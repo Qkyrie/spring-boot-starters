@@ -1,0 +1,78 @@
+{
+  "groups": [
+    {
+      "name": "auth0"
+    }
+  ],
+  "properties": [
+    {
+      "name": "auth0.domain",
+      "type": "java.lang.String",
+      "description": "This is your auth0 domain (tenant you have created when registering with auth0 - account name)."
+    },
+    {
+      "name": "auth0.issuer",
+      "type": "java.lang.String",
+      "description": "This is the issuer of the JWT Token (typically full URL of your auth0 tenant account."
+    },
+    {
+      "name": "auth0.enabled",
+      "type": "java.lang.Boolean",
+      "description": "A boolean flag that can disable all Auth0 Spring Boot starters.  This is mostly useful during testing or debugging, or if you want to compare behavior when Auth0 is enabled or disabled.",
+      "defaultValue": true
+    },
+    {
+      "name": "auth0.clientId",
+      "type": "java.lang.String",
+      "description": "This is the client id of your auth0 application (see Settings page on auth0 dashboard)."
+    },
+    {
+      "name": "auth0.clientSecret",
+      "type": "java.lang.String",
+      "description": "This is the client secret of your auth0 application (see Settings page on auth0 dashboard)."
+    },
+    {
+      "name": "auth0.onLogoutRedirectTo",
+      "type": "java.lang.String",
+      "description": "This is the page / view that users of your site are redirected to on logout. Should start with `/`."
+    },
+    {
+      "name": "auth0.loginRedirectOnSuccess",
+      "type": "java.lang.String",
+      "description": "This is the landing page URL context path for a successful authentication. Should start with `/`."
+    },
+    {
+      "name": "auth0.loginRedirectOnFail",
+      "type": "java.lang.String",
+      "description": "This is the URL context path for the page to redirect to upon failure. Should start with `/`."
+    },
+    {
+      "name": "auth0.loginCallback",
+      "type": "java.lang.String",
+      "description": "This is the URL context path for the login callback endpoint. Should start with `/`."
+    },
+    {
+      "name": "auth0.securedRoute",
+      "type": "java.lang.Integer",
+      "description": "This is the URL pattern to secure a URL endpoint. Should start with `/`."
+    },
+    {
+      "name": "auth0.base64EncodedSecret",
+      "type": "java.lang.Boolean",
+      "description": "This is a boolean value indicating whether the Secret used to verify the JWT is base64 encoded. Default is `true`.",
+      "defaultValue": true
+    },
+    {
+      "name": "auth0.signingAlgorithm",
+      "type": "java.lang.String",
+      "description": "This is signing algorithm to verify signed JWT token. Use `HS256` or `RS256`.",
+      "defaultValue": "HS256"
+    },
+    {
+      "name": "auth0.publicKeyPath",
+      "type": "java.lang.String",
+      "description": "This is the path location to the public key stored locally on disk / inside your application War file WEB-INF directory.\nShould always be set when using `RS256`.\nDefault to empty string as HS256 is default.",
+      "defaultValue": ""
+    }
+  ]
+}

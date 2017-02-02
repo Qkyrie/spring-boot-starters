@@ -8,14 +8,21 @@ import com.auth0.authentication.result.UserProfile;
 import com.auth0.web.Auth0Config;
 import org.apache.commons.lang3.Validate;
 
+import javax.annotation.PostConstruct;
+
 public class Auth0 {
 
-    private final AuthenticationAPIClient authenticationAPIClient;
+    private AuthenticationAPIClient authenticationAPIClient;
 
     private Auth0Config auth0Config;
 
     public Auth0(final Auth0Config auth0Config) {
         this.auth0Config = auth0Config;
+
+    }
+
+    @PostConstruct
+    public void init() {
         Validate.notNull(this.auth0Config.getClientId(), "auth0.clientId should not be empty");
         Validate.notNull(this.auth0Config.getClientSecret(), "auth0.clientSecret should not be empty");
         Validate.notNull(this.auth0Config.getDomain(), "auth0.domain should not be empty");
