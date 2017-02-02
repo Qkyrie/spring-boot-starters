@@ -5,9 +5,13 @@ cache:
   directories:
   - ".autoconf"
   - "$HOME/.m2"
+
+install: mvn install -P !build-extras -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+script: mvn test -P !build-extras -B
+
 after_success:
 - "./scripts/continuous-integration/prepare-deploy-to-mvn.sh"
-- "./scripts/continuous-integration/deploy-to-maven.sh"
+- "./scripts/continuous-integration/deploy-to-mvn.sh"
 env:
   global:
   - secure: ViLRCEuelC+cVwUzMygBIn1Ff9waGij3Xv5mpd9SdFaGcSjvAVjwUqfbKJFDmKTEVY8Ze4bLuv37d0o4oIVe2BLj7YQ45QN6h9vALZMr85InHz3TXifQ1Gxz7FyDn81NwBT1vCjj01wAGOla1XTce/11bjp3RF9LMuH9x0R/BbAH1jFCurul0/6btTxl+BUlUBFJOGa/+kTKAXjNsXovC8fgZ8aeTryZjZclR1zajzNKDMAvTTk0SRaCqFqwqBq+2UE4ZYSMwrFvapHBces4eCZISeGIoGvfgubVwJWE7ePuU7qj41/jjthVEZf2CMqHCkM9ZljQKH5KDXQbmWYfExHuDOp7XEAI/kJa76sBEQNIgz+/lbfP/BnoEAazugLXhehN4idbCjvTuNJZL2RYFRmurvrvgHqjyypDTlpA+X9zA6GRz9PJEqJgHpmR23L59A7jOAx3i3NO8XrG/OYaMPz74p06h+U34hBSoiryO7lnGTzLlQjHAdQCTAmBu2lEfMokvvfg6JQQagAO3XzJ3r0dF2kjHy/ohn28eqdHEHfEoDWDKyiW8F04S9Mh112Ooxq3xqdNCIRHMHPT6F3+DAwWwZStZNNwaPzkJ3ZiBreYWBTLpo34f3ofFhQFqaIAj5nMB0K8vltrXuwaxWx35sTpq9iuZ4mhLHkA3T0e3hU=
