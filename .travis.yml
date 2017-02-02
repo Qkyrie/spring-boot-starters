@@ -5,3 +5,7 @@ cache:
   directories:
   - ".autoconf"
   - "$HOME/.m2"
+
+after_success:
+  - ./scripts/continuous-integration/prepare-deploy-to-mvn.sh
+  - ./scripts/continuous-integration/deploy-to-maven.sh
