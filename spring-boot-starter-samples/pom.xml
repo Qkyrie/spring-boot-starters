@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>eu.deswaef.spring</groupId>
+        <groupId>eu.de-swaef.spring</groupId>
         <artifactId>spring-boot-starters</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
@@ -23,7 +23,7 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>eu.deswaef.spring</groupId>
+                <groupId>eu.de-swaef.spring</groupId>
                 <artifactId>spring-boot-starter-auth0</artifactId>
                 <version>${project.version}</version>
             </dependency>
